@@ -323,7 +323,6 @@
 ;;; other color functions
 ;;;
 
-
 ;; sRGB <-> linear RGB convertion
 ;; https://en.wikipedia.org/wiki/SRGB#The_forward_transformation_(CIE_XYZ_to_sRGB)
 (defun ct-linearize (comp)
@@ -353,7 +352,6 @@ Ranges for sRGB color are all 0-100."
   "Convert linear RGB COLOR to sRGB color space.
 Ranges for RGB color are all 0-100."
   (mapcar #'ct-delinearize color))
-
 
 (defun ct-lab-lighten (c &optional value)
   "Lighten color C by VALUE in the lab space. Value defaults to a very small amount."
